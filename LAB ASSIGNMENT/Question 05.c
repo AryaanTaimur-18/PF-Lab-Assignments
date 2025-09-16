@@ -2,16 +2,21 @@
 
 int main()
 {
-	int Number;
+	int Marks;
 	
-	printf(" Enter any integer:");
-	scanf(" %d",&Number);
+	printf("Enter student\'s marks:");
+	scanf(" %d",&Marks);
 	
-	if(Number%2==0)
-	printf("\n The Number (%d) is even",Number);
-	
-	else
-	printf("\n The Number (%d) is odd",Number);
+	if(Marks>=85 && Marks<=100)
+	printf("Grade A");
+	else if(Marks>=74 && Marks<=84)
+	printf("Grade B");
+	else if(Marks>=55 && Marks<=69)
+	printf("Grade C");
+	else if(Marks>=40 && Marks<=54)
+	printf("Grade D");
+	else 
+	printf("Grade F");
 	
 	return 0;
 }
